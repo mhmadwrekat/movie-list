@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,900&display=swap" rel="stylesheet">
+        
+        <link rel="stylesheet" href="./css/reset.css">
+        <link rel="stylesheet" href="./css/style.css">
+    </head>
+    <title>EXAM</title>
+    <body>
+        <header>
+<h1>My Movie List</h1>
+        </header>
+        <main>
+            <section class='sectionTwo'>
+                <!--
+                    a form in order to add the 
+                    **movie name** and **movie category**
+                     and **issue year**. 
+                -->
+                <fieldset>New Movie
+                <form>
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name">
+                    
+                    <label for="category">Image</label>
+                    <select name="category" id="category">
+                      <option value="action">Action</option>
+                      <option value="adventure">Adventure</option>
+                      <option value="animation">Animation</option>
+                      <option value="comedy">Comedy</option>
+                      <option value="detective">Detective</option>
+                      <option value="fantasy">Fantasy</option>
+                      <option value="history">History</option>
+                      <option value="horror">Horror</option>
+                      <option value="musical">Musical</option>
+                      <option value="pirate">Pirate</option>
+                      <option value="romantic">Romantic</option>
+                      <option value="sci-fi">SCI-FI</option>
+                      <option value="war">War</option>
+                      <option value="western">Western</option>
+                    </select>
+                    
+                    <label for="year">Release</label>
+                    <input type="number" id="year" name="year">
+                    <div>
+                    <input type="submit" value="Submit">
+                    <input type="reset" value="Clear All">
+                    </div>
+                  </form> 
+                </fieldset>
+            </section>
+            <section class='sectionOne'>
+                <table id='table'>
+                </table>
+            </section>
+        </main>
+        <footer>
+<p>All right Reserved 2021 © ASAC</p>
+        </footer>
+        <script src='./js/app.js'>
+        </script>
+    </body>
+</html>
